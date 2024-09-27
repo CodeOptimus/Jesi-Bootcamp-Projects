@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
@@ -11,13 +11,19 @@ body {
 }
 
 .main {
-  width: 600px;
-  margin: 5% auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  width: 500px;
+  margin: 3rem auto;
+  height: auto;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+  background-color: white;
+  border-radius: 2rem;
+  box-shadow: 0px 20px 20px hsla(256, 50%, 30%, 0.1);
+  align-items: stretch;
 }
 
+/* left side of the card */
 .main .card-1 {
   display: flex;
   flex-direction: column;
@@ -27,17 +33,134 @@ body {
     hsl(252, 100%, 67%),
     hsl(241, 81%, 54%)
   );
-  /* width: 250px; */
-  padding: 10px;
+  width: auto;
+  padding: 0 1.5rem;
   text-align: center;
-
+  border-radius: 15px;
 }
 
-.main .card-1 .title {
-    color: hsl(221, 100%, 96%);
+.main .card-1 .score-circle {
+  background-color: hsl(256, 72%, 46%);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.card-2 .summary-measures ul {
-  list-style: none;
+.main .card-1 .score-circle .received-score {
+  font-size: 3rem;
+  display: block;
+  font-weight: 800;
 }
 
+.main .card-1 .score-circle .total-score {
+  font-size: 0.75rem;
+}
+
+.main .make-gray {
+  color: hsl(241, 100%, 89%);
+  opacity: 0.7;
+  font-weight: 600;
+}
+
+.main .make-white {
+  color: hsl(0, 0%, 100%);
+}
+
+.main .card-1 .remark p {
+  font-size: 0.85rem;
+  margin-top: 1rem;
+  font-weight: 400;
+}
+
+/* Right side of the card */
+.main .card-2 {
+  padding: 15px 0px 20px 10px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  justify-content: center;
+}
+
+.card-2 h2 {
+  font-size: 1rem;
+  padding-left: 0;
+  margin: 1rem 0 1.5rem;
+}
+
+.card-2 .summary-measures {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-2 .measure-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.measure-details div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust the gap to control spacing between the icon and text */
+}
+
+.card-2 .summary-measures .reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.reaction .reaction-color {
+  color: hsl(0, 100%, 67%);
+  font-weight: 700;
+}
+
+.card-2 .summary-measures .memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.memory .memory-color {
+  color: hsl(39, 100%, 56%);
+  font-weight: 700;
+}
+
+.card-2 .summary-measures .verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.verbal .verbal-color {
+  color: hsl(166, 100%, 37%);
+  font-weight: 700;
+}
+
+.card-2 .summary-measures .visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.visual .visual-color {
+  color: hsl(234, 85%, 45%);
+  font-weight: 700;
+}
+
+.card-2 button {
+  border: none;
+  padding: 1rem 0.9rem;
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 40px;
+  font-family: inherit;
+  margin-top: 1rem;
+}
+
+.card-2 .make-dark {
+  color: hsl(224, 30%, 27%);
+  font-weight: 800;
+}

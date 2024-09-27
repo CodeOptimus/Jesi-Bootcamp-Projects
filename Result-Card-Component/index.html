@@ -6,75 +6,68 @@
     <!-- displays site properly based on user's device -->
     <title>Frontend Mentor | Results summary component</title>
     <link rel="stylesheet" href="./style.css" />
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
     <main class="main">
       <section class="card-1">
-        <span class="title">Your Result</span>
-        <div class="score">
-          <span>76</span>
-          <span>of 100</span>
+        <span class="title make-gray">Your Result</span>
+        <div class="score-circle">
+          <p class="received-score make-white">76</p>
+          <p class="total-score make-gray">of 100</p>
         </div>
         <div class="remark">
-          <h2>Great</h2>
-          <p>
+          <h2 class="make-white">Great</h2>
+          <p class="make-gray">
             You scored higher than 65% of the people who have taken these tests.
           </p>
         </div>
       </section>
+
       <section class="card-2">
-        <h3>Summary</h3>
+        <h2 class="make-dark">Summary</h2>
         <div class="summary-measures">
-          <div class="measure-details">
-            <img
-              src="./assets/images/icon-reaction.svg"
-              alt="Reaction icon"
-            />Reaction <span>80 / <span class="make-gray">100</span> </span>
+          <div class="measure-details reaction">
+            <div>
+              <img
+                src="./assets/images/icon-reaction.svg"
+                alt="Reaction icon"
+              />
+              <span class="reaction-color">Reaction</span>
+            </div>
+            <div>
+              <span class="make-dark">80 / <span class="make-gray">100</span> </span>
+            </div>
           </div>
-          <div class="measure-details">
-            <img
-              src="./assets/images/icon-memory.svg"
-              alt="Memory icon"
-            />Memory <span>92 / <span class="make-gray">100</span> </span>
+          <div class="measure-details memory">
+            <div>
+              <img src="./assets/images/icon-memory.svg" alt="Memory icon" />
+              <span class="memory-color">Memory</span>
+            </div>
+            <div>
+              <span class="make-dark">92 / <span class="make-gray">100</span> </span>
+            </div>
           </div>
-          <div class="measure-details">
-            <img src="./assets/images/icon-verbal.svg" alt="" />Verbal
-            <span>61 / <span class="make-gray">100</span></span>
+          <div class="measure-details verbal">
+            <div>
+              <img src="./assets/images/icon-verbal.svg" alt="" />
+              <span class="verbal-color">Verbal</span>
+            </div>
+            <div>
+              <span class="make-dark">61 / <span class="make-gray">100</span></span>
+            </div>
           </div>
-          <div class="measure-details">
-            <img src="./assets/images/icon-visual.svg" alt="" />Visual
-            <span>72 / <span class="make-gray">100</span></span>
+          <div class="measure-details visual">
+            <div>
+              <img src="./assets/images/icon-visual.svg" alt="" />
+              <span class="visual-color">Visual</span>
+            </div>
+            <div>
+              <span class="make-dark">72 / <span class="make-gray">100</span></span>
+            </div>
           </div>
-          <button>Continue</button>
+          <button class="make-white">Continue</button>
         </div>
       </section>
     </main>
   </body>
 </html>
-
-<!-- Perspective: Make them lists to span -->
-<!-- <ul>
-            <li>
-              <img
-                src="./assets/images/icon-reaction.svg"
-                alt="Reaction icon"
-              />Reaction <span>80 / <span class="make-gray">100</span>
-                </span>
-            </li>
-            <li>
-              <img
-                src="./assets/images/icon-memory.svg"
-                alt="Memory icon"
-              />Memory <span>92 / <span class="make-gray">100</span>
-                </span>
-            </li>
-            <li>
-              <img src="./assets/images/icon-verbal.svg" alt="" />Verbal
-              <span>61 / <span class="make-gray">100</span></span>
-            </li>
-            <li>
-              <img src="./assets/images/icon-visual.svg" alt="" />Visual
-              <span>72 / <span class="make-gray">100</span></span>
-            </li>
-          </ul> -->
